@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Strength Syndicate | Titan's Spine</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="Strength Syndicate | Titan's Spine" />
+    <meta property="og:type" content="Titan's Spine" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>"
+    />
+    <meta property="og:url" content="https://address.io/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="titanspine.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="main">
+        <h1>
+          <b>Titan's Spine</b>
+        </h1>
+        <div class="training-details">
+          <h2>Training Description:</h2>
+          <div class="detail-box">
+            If the timer runs out or you fail the exercise you got 0 points/dmg
+          </div>
+          <div class="detail-box">
+            You can tick completed only if you completed the set 100% according
+            to the given weight/reps. If you fell even 1 rep short or run out of
+            time the set has failed.
+          </div>
+          <div class="detail-box">
+            Your score adds up based on completed sets and the difficulty chosen
+            for each set
+          </div>
+          <div class="detail-box">
+            To complete the challenge you need at least 1 brutal and 1 hard set
+            completed for each exercise on average.
+          </div>
+        </div>
+        <div class="training-details">
+          <h2>Reference Weights</h2>
+          <label>Leg Press</label>
+          <input
+            type="number"
+            id="legpRef"
+            placeholder="Enter number"
+            value="400"
+          />
+          <label>Leg Extension</label>
+          <input
+            type="number"
+            id="legexRef"
+            placeholder="Enter number"
+            value="120"
+          />
+          <label>Leg Curl</label>
+          <input
+            type="number"
+            id="legcRef"
+            placeholder="Enter number"
+            value="87"
+          />
+          <label>Squat</label>
+          <input
+            type="number"
+            id="squatRef"
+            placeholder="Enter number"
+            value="120"
+          />
+        </div>
+        <div class="training-details">
+          <h2>Leg Press</h2>
+          <div class="detail-box">
+            <b>Set No1</b>
+            <select name="difficulty" id="difficultyLegpSet1">
+              <option value="easy">EASY</option>
+              <option value="hard">HARD</option>
+              <option value="brutal">BRUTAL</option>
+            </select>
+            <table class="detail-table">
+              <tr>
+                <td>Volume</td>
+                <td id="legpSet1Vol1">0</td>
+                <td id="legpSet1Vol2">0</td>
+              </tr>
+              <tr>
+                <td>Resistance</td>
+                <td id="legpSet1Res1">0</td>
+                <td id="legpSet1Res2">0</td>
+              </tr>
+            </table>
+            <label>Success:</label>
+            <input
+              type="checkbox"
+              id="successLegpSet1"
+              name="successLegpSet1"
+            />
+          </div>
+          <div class="detail-box">
+            <b>Set No2</b>
+            <select name="difficulty" id="difficultyLegpSet2">
+              <option value="easy">EASY</option>
+              <option value="hard">HARD</option>
+              <option value="brutal">BRUTAL</option>
+            </select>
+            <table class="detail-table">
+              <tr>
+                <td>Volume</td>
+                <td id="legpSet2Vol1">0</td>
+                <td id="legpSet2Vol2">0</td>
+              </tr>
+              <tr>
+                <td>Resistance</td>
+                <td id="legpSet2Res1">0</td>
+                <td id="legpSet2Res2">0</td>
+              </tr>
+            </table>
+            <label>Success:</label>
+            <input
+              type="checkbox"
+              id="successLegpSet2"
+              name="successLegpSet2"
+            />
+          </div>
+        </div>
+        <div class="training-details">
+          <h2>Leg Extension</h2>
+          <div class="detail-box">
+            <b>Set No1</b>
+            <select name="difficulty" id="difficultyLegexSet1">
+              <option value="easy">EASY</option>
+              <option value="hard">HARD</option>
+              <option value="brutal">BRUTAL</option>
+            </select>
+            <table class="detail-table">
+              <tr>
+                <td>Volume</td>
+                <td id="legexSet1Vol1">0</td>
+                <td id="legexSet1Vol2">0</td>
+              </tr>
+              <tr>
+                <td>Resistance</td>
+                <td id="legexSet1Res1">0</td>
+                <td id="legexSet1Res2">0</td>
+              </tr>
+            </table>
+            <label>Success:</label>
+            <input
+              type="checkbox"
+              id="successLegexSet1"
+              name="successLegexSet1"
+            />
+          </div>
+          <div class="detail-box">
+            <b>Set No2</b>
+            <select name="difficulty" id="difficultyLegexSet2">
+              <option value="easy">EASY</option>
+              <option value="hard">HARD</option>
+              <option value="brutal">BRUTAL</option>
+            </select>
+            <table class="detail-table">
+              <tr>
+                <td>Volume</td>
+                <td id="legexSet2Vol1">0</td>
+                <td id="legexSet2Vol2">0</td>
+              </tr>
+              <tr>
+                <td>Resistance</td>
+                <td id="legexSet2Res1">0</td>
+                <td id="legexSet2Res2">0</td>
+              </tr>
+            </table>
+            <label>Success:</label>
+            <input
+              type="checkbox"
+              id="successLegexSet2"
+              name="successLegexSet2"
+            />
+          </div>
+        </div>
+        <div class="training-details">
+          <div class="detail-box">
+            <b id="result"></b>
+          </div>
+        </div>
+        <hr />
+        <footer>
+          <p>
+            <i>Strength Syndicate</i>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
